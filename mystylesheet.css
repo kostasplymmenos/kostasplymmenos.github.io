@@ -73,7 +73,10 @@ nav a.active {
 .main {
 	font-size: 20px;
 	width: 100%;
-	height: 700px;
+	min-height: 700px;
+	max-height: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .context{
@@ -86,7 +89,8 @@ nav a.active {
 	height: 95%;
 	text-align: center;
     color: white;
-	border-radius: 25px;
+	border-radius: 20px;
+	padding: 1%;
 }
 
 .context h3 {
