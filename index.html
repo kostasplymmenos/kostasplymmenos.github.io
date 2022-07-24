@@ -71,6 +71,18 @@
             border: 1px solid #ccc;
             border-top: none;
             text-align: center;
+            height: 60%;
+            overflow-y: scroll;
+        }
+
+        .tabcontent::-webkit-scrollbar {
+            display: none;
+        }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+        .tabcontent {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
 
         .avatar {
@@ -120,15 +132,18 @@
       <span id="left"></span>
       <span id="right"></span>
 
-      <center><img src="public/me.png" class="avatar"></center>
-      <h1 style="margin: 0 40%; text-align: center; width: 20%; color: #404040">Kostas Plymmenos</h1>
-      
-
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button>
-        <button class="tablinks" onclick="openTab(event, 'News Feed')">News Feed</button>
-        <button class="tablinks" onclick="openTab(event, 'Professional Experience')">Biography</button>
+      <div style="height: 38%;">
+        <center><img src="public/me.png" class="avatar"></center>
+        <h1 style="margin: 0 40%; text-align: center; width: 20%; color: #404040">Kostas Plymmenos</h1>
+        
+  
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button>
+          <button class="tablinks" onclick="openTab(event, 'News Feed')">News Feed</button>
+          <button class="tablinks" onclick="openTab(event, 'Professional Experience')">Curriculum vitae</button>
+        </div>
       </div>
+     
       
       <!-- Tab content -->
       <div id="About Me" class="tabcontent">
@@ -145,11 +160,48 @@
     </div>
       
       <div id="News Feed" class="tabcontent">
-        <h3>Here are some of my favorite live feeds about coding, technology and world news</h3>
+        <h3>Here are some latest posts of my favorite feeds about coding, technology and world news</h3>
       </div>
       
       <div id="Professional Experience" class="tabcontent">
-        <h3>Coming Soon...</h3>
+        <h3>Work Experience</h3>
+        <h4>Senior Software Engineer @ wappier</h4>
+        <p> ‣ Assigned the role of Technical Leader being responsible of the most wappier’s backend services, delegating tasks and supporting the team<br>
+            ‣ Responsible for the people management of my team of 4 direct reports through coaching, mentoring and 1-1s<br>
+            ‣ Implementing new Web3.0 services for our NFT Marketplace and blockchain analytics service, mainly working on Ethereum</p>
+        <h4>Software Engineer @ wappier</h4>
+        <p> ‣ Assigned the role of Scrum Master of the core backend team of 5 people performing all the Scrum ceremonies in a 3-week sprint.<br>
+            ‣ We optimized our algorithms and code, fine-tuned and redesigned our systems, so we reduced our operating costs by 300%<br>
+            ‣ We designed and implemented numerous new features and services introducing new tech like Rust, PostgresDB, Kafka, gRPC protocol etc.<br>
+            ‣ Had an impact on defining and improving our software dev lifecycle and team processes regarding planning, review, testing and documenting
+           </p>
+        <h4>Associate Software Engineer @ wappier</h4>
+        <p> ‣ Mainly involved in extending, fixing and optimizing our core services written in Node.js with MongoDB and Redis<br>
+            ‣ Benchmarking our systems with stress testing tools. Monitoring production with Grafana, Prometheus and Elastic Stack<br>
+            ‣ Creating CI/CD pipelines and handling deployments on non-production environments<br>
+            ‣ Implementing Integration, UI automation Tests and BDD test cases<br>
+            ‣ Experienced maintaining a PHP project and creating a new React project with a colleague.</p>
+        <hr>
+        <h3>Education</h3>
+        <h4>BSc Computer Science & Telecommunications at National and Kapodistrian University of Athens</h4>
+        <p>‣ Graduated with a grade of 8.05/10 specializing in Software Engineering and Data Management</p>
+        <hr>
+        <h3>Certifications & Trainings</h3>
+        <p> ‣ Junior to Senior Web Developer, Advanced Node.js, Google Developer Scholarship: Android Dev,
+            Go: The Complete Developer’s Guide, The Rust Programming Language, Docker & Kubernetes: The Complete Guide, and more</p>
+        <p>Blanchard Management Essentials Leadership Training</p>
+        <p>ECPE Certificate of Proficiency in English (C2 Level)</p>
+        <hr>
+        <h3>Projects</h3>
+        <p>‣ Meteor Clash – My full featured Unity 2D hypercasual game written in C# available on Google Play Store<br>
+            ‣ Compiler written in Java for MiniJava language that produces LLVM code<br>
+            ‣ Implementation of a Database - Sigmod 2018 programming contest assignment written in C++<br>
+            ‣ Text Classification tool written in Python (scikit-learn, pandas, numpy) – Achieved 3
+           rd position in Kaggle competition<br>
+            ‣ Web Indexer and Search Engine written in C</p>
+        <hr>
+        <h3>Seminars & Interests</h3>
+        <p>WeAreDevelopers World Congress 2019, Berlin, Germany</p>
       </div>
 
     </body>
